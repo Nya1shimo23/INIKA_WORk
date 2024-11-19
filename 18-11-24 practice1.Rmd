@@ -33,10 +33,41 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
+---
 - # course part 1 - Laboratory
 - we selected 20 isolates
 - 6 isolates are ***Klebsiella spp***._ isolates
 - isolates are *Escherichia coli*_ isolates 
 - 8 isolates are *salmonella spp*_ isolates
+---
 
+```{r}
+```
+
+```{r}
+```
+
+ctrl+alt+I (make a cell - shortcut on the keyboard)
+
+```{r}
+angry_or_not <- "not"
+```
+
+Madelaine, are your angry or not? `r (angry_or_not)`
+
+#working with your data
+
+```{r}
+here::here()
+```
+
+```{r}
+path_data <- here::here("data/2024-09-25_INIKA_SAMPLING_ANALYSIS_HUMAN.csv")
+
+path_data
+```
+
+```{r}
+human_data <-
+  readr::read_csv2(path_data)
+```
