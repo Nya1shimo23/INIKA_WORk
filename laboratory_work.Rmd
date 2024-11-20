@@ -24,8 +24,16 @@ knitr::opts_chunk$set(echo = TRUE)
 ![integrated pdf](files/VITECK 
 RESULTS19_11_2024.pdf)
 -->
+
 <!-- I have made a link to a file -->
 [linked pdf](files/VITECK RESULTS19_11_2024.pdf)
+
+![results]("fileS)
+
+- some isolates could not be identified 
+- reasons would be 
+  - no colony
+  - it could be several strains (>?)
 
 
 # course part 2 - laboratory_work
@@ -39,15 +47,18 @@ M = Maulid
 A = Anna
 C = Camilla
 
-A2 E
-A4 M
-B3 A
-C1 E
-C2 C
-C4 M
-D1 C
-D2 C
-C4 M
-D4 A
+-- A2 E
+-- A4 M
+-- B3 A
+-- C1 E
+-- C2 C
+-- C4 M
+-- D1 C
+-- D2 C
+-- C4 M
+-- D4 A
 
+Subculturing of strains for DNA extraction were done 19.11.2024.
+
+Emmanuel : A2 and C1
 
