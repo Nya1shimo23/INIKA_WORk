@@ -187,3 +187,10 @@ human_data_selection %>%
   #summary()
 ```
 
+```{r}
+human_data_selection %>%
+  filter(INIKA_OH_TZ_ID != "238") %>%
+  filter(is.na(Gender))
+#summary()
+```
+
