@@ -3,46 +3,16 @@ title: "Untitled"
 author: "Kija"
 date: "`r Sys.Date()`"
 output: html_document
-
-
-```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-```
-
-
-
-# course part 1 - Laboratory
 - we selected 20 isolates
 - 6 isolates are ***Klebsiella spp***._ isolates
 - isolates are *Escherichia coli*_ isolates 
 - 8 isolates are *salmonella spp*_ isolates
-
-ctrl+alt+I (make a cell - shortcut on the keyboard)
-
-```{r}
-angry_or_not <- "not"
-```
-
-Madelaine, are your angry or not? `r (angry_or_not)`
-
-#working with your data
-
-```{r}
 here::here()
-```
-
-```{r}
 path_data <- here::here("data/2024-09-25_INIKA_SAMPLING_ANALYSIS_HUMAN.csv")
-
-path_data
-```
-
-```{r}
-human_data <-
   readr::read_csv2(path_data)
-```
-For`; delimited files its read_csv2 function
-For`,`delimited files its read_csv function
+editor_options: 
+  chunk_output_type: console
 ---
 # Day 3
 
@@ -112,4 +82,108 @@ str(human_data)
 ```
 
 
+
+<!--
+```{r}
+original_names <- colnames(human_data)
+original_names
+```
+
+```{r}
+library(tidyverse)
+new_names <- str_replace_all(original_names, " ", "_")
+new_names
+new_names[88]
+```
+
+```{r}
+new_names2 <- str_replace_all(
+  new_names, "[?/,:.*()-]", "_" ) %>%
+  str_remove_all("(^_*)|(_*$)")
+```
+
+```{r}
+colnames(human_data) <- new_names2
+```
+
+-->
+
+- selecting columns to reduce the number of columns
+
+```{r}
+new_columns <- 
+  colnames(human_data) %>%
+  str_replace_all(" ", "_") %>%
+  str_replace_all( "[?/,;.*()-]", "_") %>%
+  str_remove_all("(^_*)|(_*$)")
+
+colnames(human_data) <- new_columns
+```
+
+
+
+```{r}
+human_data_selection <- 
+  human_data %>%
+  select(INIKA_OH_TZ_ID, Age__yrs, Gender, Enter_a_date, Region, District, 
+         Specify_if_other_district, Sample, Season, Origin_of_sample, 
+         Which_class_grade_are_you, 
+         Who_is_your_caretaker, 
+         If_others__mention, 
+         What_is_your_occupation_and_or_of_your_caretaker, 
+         Have_you_ever_heard_about_AMR, If_yes__how_did_you_get_this_information, 
+         Have_you_or_your_children_used_any_antibiotics_at_any_time, 
+         If_yes__where_did_you_get_these_drugs_from,
+         If_it_was_drug_sellers_or_pharmacy__did_you_have_a_prescription_from_the_doctor_prescriber,
+         GPS_coordinates_latitude, GPS_coordinates_longitude) 
+
+human_data_selection %>% View()
+```
+
+```{r}
+glimpse(human_data_selection)
+str(human_data_selection)
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+-> viewing your data or better an abstract of your data. Notion of pipe and selecting columns
+
+```{r}
+glimpse(human_data_selection)
+str(human_data_selection)
+```
+
+# HERE
+-something does not make sense - empty column
+
+
+```{r}
+human_data_selection <-
+  human_data_selection %>%
+  select(-Specify_if_other_district) %>%
+  mutate_at(vars(Age__yrs), as.integer) %>%
+  mutate_if(is.character, factor) %>%
+  mutate_at(vars(INIKA_OH_TZ_ID), as.character)
+```
+
+- Summary
+
+```{r}
+summary(human_data_selection)
+```
+
+```{r}
+human_data_selection %>%
+  filter(INIKA_OH_TZ_ID == "238")
+```
+
+```{r}
+human_data_selection %>%
+  filter(INIKA_OH_TZ_ID != "238") %>%
+  filter_(is.na(Gender))
+  #summary()
+```
 
