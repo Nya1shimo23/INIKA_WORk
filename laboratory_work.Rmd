@@ -1,0 +1,53 @@
+---
+title: "Laboratory Works"
+author: "Kija"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+---
+# course part 1 - Laboratory
+- we selected 20 isolates
+- 6 isolates are ***Klebsiella spp***._ isolates
+- isolates are *Escherichia coli*_ isolates 
+- 8 isolates are *salmonella spp*_ isolates# course part 1 - Laboratory
+
+
+
+## Results of isolates species identification
+
+<!--
+![integrated pdf](files/VITECK 
+RESULTS19_11_2024.pdf)
+-->
+<!-- I have made a link to a file -->
+[linked pdf](files/VITECK RESULTS19_11_2024.pdf)
+
+
+# course part 2 - laboratory_work
+
+picture of results
+Nine isolates were confirmed *E. coli* and *S. enterica*
+
+- Preparing for DNA Extraction on Thursday, who are responsible for which strains 
+E = Emmanuel
+M = Maulid
+A = Anna
+C = Camilla
+
+A2 E
+A4 M
+B3 A
+C1 E
+C2 C
+C4 M
+D1 C
+D2 C
+C4 M
+D4 A
+
+
