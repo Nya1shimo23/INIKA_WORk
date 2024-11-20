@@ -11,41 +11,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars
-library cars 
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
----
-- # course part 1 - Laboratory
+# course part 1 - Laboratory
 - we selected 20 isolates
 - 6 isolates are ***Klebsiella spp***._ isolates
 - isolates are *Escherichia coli*_ isolates 
 - 8 isolates are *salmonella spp*_ isolates
----
-
-```{r}
-```
-
-```{r}
-```
 
 ctrl+alt+I (make a cell - shortcut on the keyboard)
 
@@ -71,3 +41,75 @@ path_data
 human_data <-
   readr::read_csv2(path_data)
 ```
+For`; delimited files its read_csv2 function
+For`,`delimited files its read_csv function
+---
+# Day 3
+
+## packages into memory
+```{r}
+?library()
+help("library")
+```
+
+## we get out data
+```{r}
+path_data <- here::here("data/2024-09-25_INIKA_SAMPLING_ANALYSIS_HUMAN.csv")
+
+path_data
+```
+```{r}
+human_data <-
+  readr::read_csv2(path_data)
+```
+
+- Names of columns
+
+```{r}
+colnames(human_data)
+```
+
+- getting the columns into a vector for pasting and manipulations
+
+```{r}
+dput(
+  colnames(human_data)
+  )
+```
+
+- exploration: c() is to make vectors
+
+```{r}
+test <- c("one", "2', 3")
+test
+test[3]
+typeof(test)
+
+class(test)
+```
+
+All the elements of a vector are of the same 'type' (text, double = Real, interger, date ...)
+
+```{r}
+test2 <-c(1,2,3)
+typeof(test2)
+typeof(test2 * test2)
+class(test2)
+```
+
+```{r}
+test2 * test2
+```
+
+```{r}
+test2 * c(1,2,3)
+```
+
+- overview of data and data types
+```{r}
+glimpse(human_data)
+str(human_data)
+```
+
+
+
