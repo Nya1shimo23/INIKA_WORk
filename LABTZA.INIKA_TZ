@@ -1,0 +1,375 @@
+[WHONET Configuration File]
+Configuration File Encoding = UTF-8
+Configuration Version = G
+Laboratory Name = INIKA
+Laboratory Type = Animal
+Legacy breakpoints notification year = 2024
+Legacy breakpoints notification revision number = 5
+Legacy breakpoints notification date = 9999/12/31
+Use dynamic breakpoints = False
+Round half dilutions = True
+Use intrinsic resistance rules = True
+Guideline year = 2024
+Breakpoint types = Human
+Sites of infection = Non-meningitis|Parenteral||Uncomplicated urinary tract infection|Meningitis|Intravenous|Oral|Inhaled|Investigational agent|Extraintestinal|Abscesses|Genital|Intestinal|Liposomal|Mammary gland|Metritis|Non-pneumonia|Other infections|Pneumonia|Prophylaxis|Respiratory|Screen|Skin|Soft tissue|Wounds
+
+[Wards]
+"","Moshi Rural","","","",""
+"","Moshi Urban","","","",""
+"","Hai","","","",""
+"","Ilemela","","","",""
+"","Nyamagana","","","",""
+"","Magu","","","",""
+
+[Institutions]
+"INIKA_TZ","INIKA"
+"oth","Other"
+
+[Departments]
+"","Other"
+"","Outpatient"
+"","Unknown"
+
+[Antibiotics]
+Antibiotic Code List Version = A
+Default Breakpoints = EUCAST
+Default Test Method = Disk diffusion
+AMX_ED10,Amoxicillin_EUCAST_Disk_10µg,,,
+AZM_ED15,Azithromycin_EUCAST_Disk_15µg,,,
+CRO_ED30,Ceftriaxone_EUCAST_Disk_30µg,,,
+CIP_ED5,Ciprofloxacin_EUCAST_Disk_5µg,,,
+DOX_ED30,Doxycycline_EUCAST_Disk_30µg,,,
+FLR_ED30,Florfenicol_EUCAST_Disk_30µg,,,
+GEN_ED10,Gentamicin_EUCAST_Disk_10µg,,,
+MEM_ED10,Meropenem_EUCAST_Disk_10µg,,,
+OXY_ED30,Oxytetracycline_EUCAST_Disk_30µg,,,
+POL_ED300,Polymyxin B_EUCAST_Disk_300units,,,
+SXT_ED1_2,Trimethoprim/Sulfamethoxazole_EUCAST_Disk_1.25/23.75µg,,,
+TYL_ED30,Tylosin_EUCAST_Disk_30µg,,,
+
+[Antibiotic Species-Specific Breakpoints]
+139,AZM_ED15,16,15,,Human,Human
+val,AZM_ED15,16,15,,Human,Human
+vel,AZM_ED15,16,15,,Human,Human
+vfl,AZM_ED15,16,15,,Human,Human
+vhi,AZM_ED15,16,15,,Human,Human
+vic,AZM_ED15,16,15,,Human,Human
+vin,AZM_ED15,16,15,,Human,Human
+vip,AZM_ED15,16,15,,Human,Human
+vo1,AZM_ED15,16,15,,Human,Human
+vog,AZM_ED15,16,15,,Human,Human
+vvu,AZM_ED15,16,15,,Human,Human
+vx1,AZM_ED15,16,15,,Human,Human
+BD-,AZM_ED15,0,0,,Human,Human
+bab,CRO_ED30,30,29,Meningitis,Human,Human
+bca,CRO_ED30,21,23,,Human,Human
+bcn,CRO_ED30,30,29,Meningitis,Human,Human
+bmt,CRO_ED30,30,29,Meningitis,Human,Human
+boi,CRO_ED30,30,29,Meningitis,Human,Human
+bsu,CRO_ED30,30,29,Meningitis,Human,Human
+kki,CRO_ED30,30,29,,Human,Human
+SVI,CRO_ED30,27,26,,Human,Human
+HA-,CRO_ED30,32,31,Non-meningitis,Human,Human
+HA-,CRO_ED30,32,31,Meningitis,Human,Human
+EBC,CRO_ED30,22,24,Non-meningitis,Human,Human
+EBC,CRO_ED30,25,24,Meningitis,Human,Human
+139,CIP_ED5,23,22,,Human,Human
+bab,CIP_ED5,27,49,,Human,Human
+ban,CIP_ED5,24,49,,Human,Human
+bca,CIP_ED5,31,30,,Human,Human
+bcn,CIP_ED5,27,49,,Human,Human
+bmt,CIP_ED5,27,49,,Human,Human
+boi,CIP_ED5,27,49,,Human,Human
+bsu,CIP_ED5,27,49,,Human,Human
+caj,CIP_ED5,26,49,,Human,Human
+cco,CIP_ED5,26,49,,Human,Human
+cdt,CIP_ED5,24,49,,Human,Human
+cul,CIP_ED5,24,49,,Human,Human
+kki,CIP_ED5,28,27,,Human,Human
+sau,CIP_ED5,17,49,,Human,Human
+sc+,CIP_ED5,17,49,,Human,Human
+spn,CIP_ED5,0,0,,Human,Human
+val,CIP_ED5,23,22,,Human,Human
+vel,CIP_ED5,23,22,,Human,Human
+vfl,CIP_ED5,23,22,,Human,Human
+vhi,CIP_ED5,23,22,,Human,Human
+vic,CIP_ED5,23,22,,Human,Human
+vin,CIP_ED5,23,22,,Human,Human
+vip,CIP_ED5,23,22,,Human,Human
+vo1,CIP_ED5,23,22,,Human,Human
+vog,CIP_ED5,23,22,,Human,Human
+vvu,CIP_ED5,23,22,,Human,Human
+vx1,CIP_ED5,23,22,,Human,Human
+SCN,CIP_ED5,22,49,,Human,Human
+AC-,CIP_ED5,21,49,,Human,Human
+AEC,CIP_ED5,21,20,,Human,Human
+AER,CIP_ED5,24,26,,Human,Human
+BCS,CIP_ED5,23,49,,Human,Human
+COR,CIP_ED5,25,49,,Human,Human
+ENT,CIP_ED5,15,14,Uncomplicated urinary tract infection,Human,Human
+HA-,CIP_ED5,30,29,Non-meningitis,Human,Human
+PAS,CIP_ED5,27,26,,Human,Human
+PS-,CIP_ED5,26,49,,Human,Human
+EBC,CIP_ED5,22,24,Non-meningitis,Human,Human
+EBC,CIP_ED5,0,0,Meningitis,Human,Human
+bab,GEN_ED10,23,22,,Human,Human
+bcn,GEN_ED10,23,22,,Human,Human
+bmt,GEN_ED10,23,22,,Human,Human
+boi,GEN_ED10,23,22,,Human,Human
+bsu,GEN_ED10,23,22,,Human,Human
+sau,GEN_ED10,18,17,,Human,Human
+sc+,GEN_ED10,18,17,,Human,Human
+SCN,GEN_ED10,22,21,,Human,Human
+AC-,GEN_ED10,17,16,,Human,Human
+AC-,GEN_ED10,17,16,Uncomplicated urinary tract infection,Human,Human
+EBC,GEN_ED10,17,16,,Human,Human
+EBC,GEN_ED10,17,16,Uncomplicated urinary tract infection,Human,Human
+139,MEM_ED10,24,23,,Human,Human
+ade,MEM_ED10,20,25,,Human,Human
+axy,MEM_ED10,20,25,,Human,Human
+bca,MEM_ED10,33,32,,Human,Human
+bvu,MEM_ED10,28,27,,Human,Human
+cdt,MEM_ED10,24,23,,Human,Human
+cpe,MEM_ED10,25,24,,Human,Human
+cul,MEM_ED10,24,23,,Human,Human
+fne,MEM_ED10,35,34,,Human,Human
+kki,MEM_ED10,30,29,,Human,Human
+lmo,MEM_ED10,26,25,,Human,Human
+pae,MEM_ED10,14,19,Non-meningitis,Human,Human
+pae,MEM_ED10,20,19,Meningitis,Human,Human
+ppm,MEM_ED10,24,23,,Human,Human
+pro,MEM_ED10,28,27,,Human,Human
+val,MEM_ED10,24,23,,Human,Human
+vel,MEM_ED10,24,23,,Human,Human
+vfl,MEM_ED10,24,23,,Human,Human
+vhi,MEM_ED10,24,23,,Human,Human
+vic,MEM_ED10,24,23,,Human,Human
+vin,MEM_ED10,24,23,,Human,Human
+vip,MEM_ED10,24,23,,Human,Human
+vo1,MEM_ED10,24,23,,Human,Human
+vog,MEM_ED10,24,23,,Human,Human
+vvu,MEM_ED10,24,23,,Human,Human
+vx1,MEM_ED10,24,23,,Human,Human
+AC-,MEM_ED10,15,20,Non-meningitis,Human,Human
+AC-,MEM_ED10,21,20,Meningitis,Human,Human
+AEC,MEM_ED10,31,30,,Human,Human
+BAC,MEM_ED10,28,27,,Human,Human
+BCS,MEM_ED10,25,24,,Human,Human
+HA-,MEM_ED10,20,19,Non-meningitis,Human,Human
+PRT,MEM_ED10,34,33,,Human,Human
+PS-,MEM_ED10,18,23,Non-meningitis,Human,Human
+EBC,MEM_ED10,16,21,Non-meningitis,Human,Human
+EBC,MEM_ED10,22,21,Meningitis,Human,Human
+PBI,MEM_ED10,28,27,,Human,Human
+139,SXT_ED1_2,21,20,,Human,Human
+ade,SXT_ED1_2,26,25,,Human,Human
+axy,SXT_ED1_2,26,25,,Human,Human
+bab,SXT_ED1_2,29,28,,Human,Human
+bca,SXT_ED1_2,15,17,,Human,Human
+bcn,SXT_ED1_2,29,28,,Human,Human
+bmt,SXT_ED1_2,29,28,,Human,Human
+boi,SXT_ED1_2,29,28,,Human,Human
+bsu,SXT_ED1_2,29,28,,Human,Human
+cdt,SXT_ED1_2,23,22,,Human,Human
+cul,SXT_ED1_2,23,22,,Human,Human
+kki,SXT_ED1_2,28,27,,Human,Human
+lmo,SXT_ED1_2,29,28,,Human,Human
+pma,SXT_ED1_2,16,49,,Human,Human
+ppm,SXT_ED1_2,17,49,,Human,Human
+spn,SXT_ED1_2,10,12,,Human,Human
+val,SXT_ED1_2,21,20,,Human,Human
+vel,SXT_ED1_2,21,20,,Human,Human
+vfl,SXT_ED1_2,21,20,,Human,Human
+vhi,SXT_ED1_2,21,20,,Human,Human
+vic,SXT_ED1_2,21,20,,Human,Human
+vin,SXT_ED1_2,21,20,,Human,Human
+vip,SXT_ED1_2,21,20,,Human,Human
+vo1,SXT_ED1_2,21,20,,Human,Human
+vog,SXT_ED1_2,21,20,,Human,Human
+vvu,SXT_ED1_2,21,20,,Human,Human
+vx1,SXT_ED1_2,21,20,,Human,Human
+AC-,SXT_ED1_2,11,13,,Human,Human
+AER,SXT_ED1_2,16,18,,Human,Human
+ENT,SXT_ED1_2,21,49,,Human,Human
+HA-,SXT_ED1_2,20,22,,Human,Human
+PAS,SXT_ED1_2,23,22,,Human,Human
+STA,SXT_ED1_2,14,16,,Human,Human
+STR,SXT_ED1_2,15,17,,Human,Human
+EBC,SXT_ED1_2,11,13,,Human,Human
+
+[Antibiotic Panels]
+Staphylococcus sp.       =  ,,,,,,,,,,,
+Streptococcus sp.        =  ,,,,,,,,,,,
+Streptococcus pneumoniae =  ,,,,,,,,,,,
+Streptococcus viridans   =  ,,,,,,,,,,,
+Enterococcus sp.         =  ,,,,,,,,,,,
+Gram positive urine      =  ,,,,,,,,,,,
+Gram negative            =  X,X,X,X,X,X,X,X,X,X,X,X
+Gram negative urine      =  ,,,,,,,,,,,
+Salmonella sp.           =  X,X,X,X,X,X,X,X,X,X,X,X
+Shigella sp.             =  ,,,,,,,,,,,
+Pseudomonas sp.          =  ,,,,,,,,,,,
+Non-fermenters           =  ,,,,,,,,,,,
+Haemophilus sp.          =  ,,,,,,,,,,,
+Campylobacter sp.        =  ,,,,,,,,,,,
+Neisseria gonorrhoeae    =  ,,,,,,,,,,,
+Neisseria meningitidis   =  ,,,,,,,,,,,
+Anaerobes                =  ,,,,,,,,,,,
+Mycobacteria             =  ,,,,,,,,,,,
+Fungi                    =  ,,,,,,,,,,,
+Parasites                =  ,,,,,,,,,,,
+
+[Antibiotic Profiles]
+
+[Hardware]
+Caliper = No
+Caliper Port = NONE
+
+[Data fields]
+Country,COUNTRY_A,3,TEXT,ORIGIN,Human-Animal-Environment,Include
+Laboratory,LABORATORY,10,TEXT,HIDDEN,Human-Animal-Environment,Include
+Origin,ORIGIN,1,TEXT,HIDDEN,Human-Animal-Environment,Include
+INIKA_OH_TZ_ID,X_INIKA_ID,20,TEXT,ORIGIN,Human-Animal,Include
+Identification number,PATIENT_ID,30,TEXT,ORIGIN,Environment,Include
+Age,AGE,3,TEXT,ORIGIN,Human,Include
+Animal species,X_SPECIES,15,TEXT,ORIGIN,Animal,Include
+Institution,INSTITUT,10,TEXT,LOCATION,Human-Animal-Environment,Include
+Region,X_REGION,12,TEXT,LOCATION,Human-Animal-Environment,Include
+District,X_DISTRICT,15,TEXT,LOCATION,Human-Animal-Environment,Include
+Sampling season,X_SEASON,10,TEXT,LOCATION,Human-Animal-Environment,Include
+Origin type,X_ORIGIN_T,20,TEXT,LOCATION,Human,Include
+Specimen number,SPEC_NUM,12,TEXT,SPECIMEN,Human-Animal-Environment,Include
+Specimen type,SPEC_TYPE,15,TEXT,HIDDEN,,Exclude
+Specimen AST date,X_AST_DATE,8,DATE,SPECIMEN,Human-Animal-Environment,Exclude
+Specimen type (Numeric),SPEC_CODE,3,TEXT,HIDDEN,,Exclude
+Specimen type human,X_SPEC_HUM,10,TEXT,SPECIMEN,Human,Include
+Specimen type animal,X_SPEC_ANI,10,TEXT,SPECIMEN,Animal,Include
+Specimen type environment,X_SPEC_ENV,30,TEXT,SPECIMEN,Environment,Include
+Protocol,X_PROTOCOL,10,TEXT,SPECIMEN,Human-Animal-Environment,Include
+Isolate number,ISOL_NUM,10,TEXT,HIDDEN,,Include
+Organism,ORGANISM,3,TEXT,MICROBIOLOGY,Human-Animal-Environment,Include
+Organism type,ORG_TYPE,1,TEXT,HIDDEN,Human-Animal-Environment,Include
+Comment,COMMENT,30,TEXT,OTHER,Human-Animal-Environment,Include
+Date of data entry,DATE_DATA,8,DATE,HIDDEN,Human-Animal-Environment,Include
+
+[Code list: X_PROTOCOL]
+List type = TABLE
+CGR3,3 gen. cefalosporin selective isolation
+CPE,Carbapenem selective isolation
+SALM,Salmonella selective isolation
+
+[Code list: X_SPECIES]
+List type = TABLE
+bro,Broiler
+cro,Crossbreed
+
+[Code list: X_FARM_1]
+List type = TABLE
+yes,Yes
+no,No
+
+[Code list: X_FARM_2]
+List type = TABLE
+yes,Yes
+no,No
+
+[Code list: X_FARM_3]
+List type = TABLE
+yes,Yes
+no,No
+
+[Code list: X_FARM_4]
+List type = TABLE
+yes,Yes
+no,No
+
+[Code list: X_ORIGIN_T]
+List type = TABLE
+sch,Schoolchildren
+out,Outpatient
+
+[Code list: X_SPEC_HUM]
+List type = TABLE
+sto,stool
+
+[Code list: X_SPEC_ANI]
+List type = TABLE
+clo,cloaca
+cae,caecal
+mu,muscle
+li,liver
+
+[Code list: X_SPEC_ENV]
+List type = TABLE
+ww,waste water
+chi,chicken pen
+soi,soil
+veg,vegetables
+man,stockpiled solid manure
+
+[Code list: X_DISTRICT]
+List type = TABLE
+mru,Moshi Rural
+mur,Moshi Urban
+hai,Hai
+ile,Ilemela
+nya,Nyamagana
+mag,Magu
+
+[Code list: X_REGION]
+List type = TABLE
+KILI,Kilimanjaro
+MWA,Mwanza
+
+[Code list: X_SEASON]
+List type = TABLE
+d,DRY
+w,WET
+
+[Clinical report format]
+Number of reports per page = 1
+Begin report = Line 2
+Heading Text (Center, Consolas, 12, Bold) = INIKA
+Heading Text (Center, Consolas, 10) = {Blank line}
+Heading Text (Center, Consolas, 10) = {Blank line}
+Heading Text (Center, Consolas, 10) = {Blank line}
+Include Footer = Yes
+Data Fields Font = Left, Consolas, 9
+Data Fields Top Right = SPEC_NUM
+Data Fields Top Right = SPEC_TYPE
+Data Fields Results = ISOL_NUM
+Data Fields Results = ORGANISM
+Data Fields Results = COMMENT
+Measurements And Interpretations = Yes
+Conditional antibiotic reporting = Yes
+Print clinical message = Yes
+
+[Expert rules:  Selective antibiotic reporting]
+
+[Expert rules:  Modify antibiotic interpretations]
+Interpretation rule = MRS
+Interpretation rule = ESBL-Confirmed (Inactive)
+Interpretation rule = ESBL-AmpC-Probable (Inactive)
+Interpretation rule = BLNAR-Hflu
+Interpretation rule = Inducible-Clinda
+
+[Expert rules:  Alerts]
+Expert rule sets = WHONET
+
+[Encryption settings]
+Encrypted fields = PATIENT_ID,SPEC_NUM
+Deleted fields = MID_NAME,FULL_NAME
+Encrypted secret word ciphertext = GmCWUa6Pvhri9/1MVvXSew==|qPg5iVEn40k1jY1kW3GHd+eZGJW2gLlYHI4PMOqA/IZyes4qTAO1wDLRrASQRR1j
+Encrypted field length = 12
+Include underscores = True
+Hexadecimal protected value = False
+Age protection = AgeInYears
+Date of birth protection = Delete
+Other date protection = NoChange
+Add or subtract days = False
+Add days = True
+Shift days = 206
+
+[Code list settings]
+File origin = UNICODE
+Code page = 65001
